@@ -75,7 +75,7 @@ void       Update_quantity()
     i = 0;
     while(i < number_books)
     {
-        if (strcmp(cheeck_book,name_book[i]) == 0)
+        if (stricmp(cheeck_book,name_book[i]) == 0)
         {
             printf("Entre the value of new quantity: ");
             scanf("%d", &new_quantity);
@@ -101,7 +101,7 @@ void    delate()
     i = 0;
     while(i < number_books)
     {
-        if (strcmp(cheeeck_book,name_book[i]) == 0)
+        if (stricmp(cheeeck_book,name_book[i]) == 0)
         {
             while(i < number_books - 1)
             {
@@ -132,7 +132,7 @@ int     calcule_total()
         i++;
     }
     return total;
-}    
+}
 
 void    goodbye()
 {
